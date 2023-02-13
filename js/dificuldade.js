@@ -25,8 +25,11 @@ const dificuldades = {
 
 
 seletor_dificuldade.forEach( (elemento) => {
-    elemento.addEventListener('click', (e) => {
-        const dificuldade = e.target.dataset.dificuldade
+    elemento.parentElement.addEventListener('click', () => {
+        const dificuldade = elemento.dataset.dificuldade
+
+        elemento.click()
+
         menorValor = dificuldades[dificuldade].min
         maiorValor = dificuldades[dificuldade].max
 
@@ -34,5 +37,7 @@ seletor_dificuldade.forEach( (elemento) => {
         
         elementoMenorValor.innerHTML = menorValor
         elementoMaiorValor.innerHTML = maiorValor
+
+        elementoChute.innerHTML = ''
     })
 })

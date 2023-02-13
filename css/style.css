@@ -12,8 +12,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0;
     font-family: var(--font-family);
@@ -23,10 +23,11 @@ body {
 .dificuldade {
     display: flex;
     position: absolute;
-    top: 0.5%;
-    font-size: 2vw;
+    top: 0;
+    font-size: 2.5vw;
     list-style: none;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 .selecao-dificuldade {
@@ -35,44 +36,53 @@ body {
 }
 
 .selecao-dificuldade input {
-    width: 0.5em;
-    height: 0.5em;
+    width: 1.7vw;
+    height: 1.7vw;
     transition: 0.8s;
 }
 
 .selecao-dificuldade input:checked {
-    width: 0.8em;
-    height: 0.8em;
+    width: 2.0vw;
+    height: 2.0vw;
     transition: 0.7s
 }
 
 
+.texto {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 90%;
+    padding-top: 3vh;
+    transition: 0.2s;
+}
+
+
 h1 {
-    font-size: 4em;
+    font-size: 5vw;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 3vw;
     margin-top: 1.5%;
 }
 
 .mensagem {
-    font-size: 2em;
-    margin-top: 1.5%;
+    font-size: 2vw;
+    margin-top: 5vh;
+    transition: 0.5s;
 }
 
 .box {
     border: 2px solid var(--primary-color);
     display: inline-block;
-    font-size: 4em;
+    font-size: 7vw;
     padding: 0.1em;
     margin: 0.2em;
     border-radius: 0.4em;
 }
 
-.texto {
-    font-size: 1.5em;
-}
+
 
 .botao {
     display: block;
@@ -103,3 +113,116 @@ h1, h2, h3, div {
     transition: 0.5s;
 }
 
+
+@media screen and (max-width: 840px) {
+
+    h1 {
+        font-size: 10vw;
+        width: 100%;
+    }
+
+    h3 {
+        padding-top: 5%;
+        width: 100%;
+        font-size: 3em;
+    }
+
+    div {
+        margin: 0 auto;
+        padding-top: 2%;
+        font-size: 4em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dificuldade {
+        padding-top: 3vw;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        font-size: 3.5vw;
+        justify-content: space-around;
+
+    }
+
+    .selecao-dificuldade {
+        padding: 0 5vw;
+        display: inline-block;
+        text-align: center;
+        height: 15vw;
+    }
+
+    .selecao-dificuldade input {
+        margin: 0 auto;
+        width: 4.5vw;
+        height: 4.5vw;
+        transition: 0.8s;
+    }
+
+    .selecao-dificuldade input:checked {
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .box {
+        font-size: 20em;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    h1 {
+        font-size: 2.5em;
+        width: 100%;
+    }
+
+    h3 {
+        padding-top: 5%;
+        width: 100%;
+        font-size: 2em;
+    }
+
+    div {
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 2%;
+        font-size: 8em;
+        text-align: center;
+    }
+    
+    .dificuldade {
+        display: flex;
+        position: relative;
+        flex-flow: column wrap;
+        font-size: 7vw;
+        align-items: left;
+    }
+
+    .selecao-dificuldade {
+        padding: 0 5vw;
+        align-items: left;
+        display: inline-block;
+        height: 20vw;
+    }
+
+    .selecao-dificuldade input {
+        margin: 0 auto;
+        width: 7vw;
+        height: 7vw;
+        transition: 0.8s;
+    }
+
+    .selecao-dificuldade input:checked {
+        width: 8vw;
+        height: 8vw;
+    }
+    
+    .box {
+        font-size: 20em;
+    }
+
+    .texto {
+        
+    }
+}

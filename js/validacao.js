@@ -4,7 +4,8 @@ function verificaChuteValido(chute) {
     if (chuteInvalido(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido</div>'
     } else if (numeroForaDoPermitido(numero)) {
-        elementoChute.innerHTML = `<div>Valor inválido: o número PRECISA estar entre ${menorValor} e ${maiorValor}.</div>`
+        elementoChute.innerHTML = `<div>Valor inválido: 
+        o número PRECISA estar entre ${menorValor} e ${maiorValor}.</div>`
     } else if (numero == numeroSecreto) {
         document.body.innerHTML = `
             <h2>Você Acertou!</h2>
@@ -20,10 +21,13 @@ function verificaChuteValido(chute) {
         elementoChute.innerHTML += `
         <div>O número secreto é menor <i class="fa-solid fa-down-long"></i></div>
         `
+
+        document.querySelector('.dificuldade').innerHTML = ''
     } else {
         elementoChute.innerHTML += `
         <div>O número secreto é maior <i class="fa-solid fa-up-long"></i></div>
         `
+        document.querySelector('.dificuldade').innerHTML = ''
     }
 }
 

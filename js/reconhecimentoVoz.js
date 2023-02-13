@@ -17,6 +17,7 @@ function exibeChuteNaTela(chute) {
         <div>Você disse: </div>
         <span class="box">${chute}</span>
     `
+    document.querySelector('.titulo').innerHTML = ''
 }
 
 recognition.addEventListener('end', () => recognition.start())
