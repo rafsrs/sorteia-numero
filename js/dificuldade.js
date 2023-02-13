@@ -31,8 +31,7 @@ seletor_dificuldade.forEach( (elemento) => {
         maiorValor = dificuldades[dificuldade].max
 
         numeroSecreto = gerarNumeroAleatorio()
-        console.log(numeroSecreto)
-
+        
         elementoMenorValor.innerHTML = menorValor
         elementoMaiorValor.innerHTML = maiorValor
     })
