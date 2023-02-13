@@ -55,6 +55,7 @@ body {
     width: 90%;
     padding-top: 3vh;
     transition: 0.2s;
+    padding-bottom: 25%;
 }
 
 
@@ -177,6 +178,10 @@ h1, h2, h3, div {
         width: 100%;
     }
 
+    h2 {
+        font-size: 3.5em;
+    }
+
     h3 {
         padding-top: 5%;
         width: 100%;
@@ -187,7 +192,7 @@ h1, h2, h3, div {
         margin: 0 auto;
         width: 100%;
         padding-top: 2%;
-        font-size: 8em;
+        font-size: 6em;
         text-align: center;
     }
     
@@ -219,10 +224,18 @@ h1, h2, h3, div {
     }
     
     .box {
-        font-size: 20em;
+        font-size: 25vw;
     }
 
+    
     .texto {
-        
+        position: relative;
+        width: auto;
+        align-items: center;
+
+    }
+
+    .botao {
+        font-size: 2.5em;
     }
 }
